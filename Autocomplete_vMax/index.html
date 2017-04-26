@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='utf-8'>
+        <title>Автокомплит списка городов</title>
+        <link type='text/css' rel='stylesheet' href='css/styles.css'>
+        <script type='text/javascript' src='https://code.jquery.com/jquery-3.1.1.min.js'></script>
+    </head>
+    <body>
+        <form action='index.html' method='post'>
+            <div id="city">
+                <label for='citySearch'>Город</label>
+                <input id='citySearch' name='citySearch' type='text' placeholder='Начните вводить название города' autocomplete='off'>
+
+                <ul id='searchAdvicesList'>
+                    <!-- <li class="searchAdvice"></li>
+                    <li class="noAdvice"></li>
+                    <li id="popAdvices"></li>
+                    <li id="tooManyAdvices"></li> -->
+                </ul>
+
+                <span id='errorMsg'>Выберите значение из списка</span>
+                <span id='warningMsg'>Значения нет в справочнике. Возможно, вы ошиблись в написании?</span>
+            </div>
+
+        </form>
+
+        <script type='text/javascript' src='js/cities.js'></script>
+        <script type='text/javascript' src='js/search.js'></script>
+    </body>
+</html>
